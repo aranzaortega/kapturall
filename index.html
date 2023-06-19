@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -11,67 +12,120 @@
     <title>Madison Curling Club</title>
   </head>
   <body>
-    <nav class="paddingY">
+    <nav class="paddingX">
       <ul class="menu">
-        <li class="logo"><a href="#">Madison Curling Club</a></li>
-        <li class="item"><a href="#">Register</a></li>
-        <li class="item"><a href="#">About us</a></li>
+        <li class="logo"><a href="">Madison Curling Club</a></li>
+        <li class="item"><a href="#registerSection">Register</a></li>
         <li class="item has-submenu">
-          <a tabindex="0">Gallery</a>
+          <a tabindex="0">About us</a>
           <ul class="submenu">
-            <li class="subitem"><a href="#">Design</a></li>
-            <li class="subitem"><a href="#">Development</a></li>
-            <li class="subitem"><a href="#">SEO</a></li>
-            <li class="subitem"><a href="#">Copywriting</a></li>
+            <li class="subitem"><a href="#servicesSection">Services</a></li>
+            <li class="subitem"><a href="#infoSection">Information</a></li>
           </ul>
         </li>
+        <li class="item"><a href="#gallerySection">Gallery</a></li>
         <li class="toggle">
           <a href="#"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
     </nav>
-    <section class="hero paddingY">
+    <section class="hero paddingX" id="heroSection">
       <div>
         <img src="kapturall-logo.png" alt="Logo" class="brandLogo"/>
-        <h1>Learn Curling this Weekend</h1>
-        <button>REGISTER NOW</button>
+        <h1>Learn Curling this Winter</h1>
+        <button class="button">REGISTER NOW</button>
     </section>
-    <section class="padding centerText">
+    <section class="padding" id="servicesSection">
       <h2 class="paddingTop">Classes and leagues forming now</h2>
-      <p class="justifyText paddingTop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quasi accusantium similique assumenda facilis reiciendis aperiam, iure autem praesentium officiis! Mollitia similique vitae in debitis doloribus dicta asperiores quibusdam id!</p>
-      <div class="cardGroup paddingTop">
-        <div class="card cardGroup">
-          <div class="card__description cardDescription">
-            <div class="icon fa fa-flag"></div>
-            <h3>Trial</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-          </div>
+      <p class="justifyText paddingTop">You've come to the right place! We have a fantastic teaching program for new curlers here at the Madison Curling Club, including
+        certified instructors who have won national awards from the United States Curling Association. We take on many new members
+        every year who have never curled before, and we help them to find their niche in this unique and enjoyable sport. Whether you're
+        here to have fun and relax or to find a competitive outlet, we've got you covered.</p>
+      <div class="flex paddingTop centerText">
+        <div class="flexItem">
+          <div class="icon fa fa-flag"></div>
+          <h3>Open House</h3>
+          <div>Youre invited! Join us before the
+            new curling season begins for one of
+            our instructional curling events. We'll introduce you the sport and include
+            time for you to get on the ice and try
+            it yourself!.</div>
         </div>
-        <div class="card cardGroup">
-          <div class="card__description cardDescription">
-            <div class="icon fa fa-file"></div>
-            <h3>Trial</h3>
-            <div>Amet eius consequatur adipisci explicabo, deserunt error odit autem quam quidem culpa laudantium ipsam obcaecati debitis voluptas, ex quae repellat dignissimos vitae.</div>
-          </div>
+        <div class="flexItem">
+          <div class="icon fa fa-file"></div>
+          <h3>Learn to Curl</h3>
+          <div>Curling lessons provide a great
+            taster to the sport with an
+            introduction to the basics and
+            information on how the game is
+            played. Many sessions are free and
+            last approximately one hour.</div>
         </div>
-        <div class="card cardGroup">
-          <div class="card__description cardDescription">
-            <div class="icon fa fa-trophy"></div>
-            <h3>Trial</h3>
-            <div>Lorem eius consequatur adipisci explicabo, deserunt error odit autem quam quidem culpa laudantium ipsam obcaecati debitis voluptas, ex quae repellat dignissimos vitae.</div>
-          </div>
+        <div class="flexItem">
+          <div class="icon fa fa-trophy"></div>
+          <h3>Leagues</h3>
+          <div>Participating in an actual game is
+            only part of the fun at the Madison
+            Curling Club. The camaraderie and social aspects of the game area
+            almost as important as the curling
+            itself.</div>
         </div>
-        <div class="card cardGroup">
-          <div class="card__description cardDescription">
-            <div class="icon fa fa-bolt"></div>
-            <h3>Trial</h3>
-            <div>Amet eius consequatur adipisci explicabo, deserunt error odit autem quam quidem culpa laudantium ipsam obcaecati debitis voluptas, ex quae repellat dignissimos vitae.</div>
-          </div>
+        <div class="flexItem">
+          <div class="icon fa fa-bolt"></div>
+          <h3>Bonspiels</h3>
+          <div>Whether it is bonspieling at other
+            clubs or socializing after a game at
+            our club, you meet life-long friends
+            in a curling club.</div>
         </div>
       </div>
     </section>
-    <footer>
-      Copyright Aranza Ortega 2023
+    <section class="padding" id="infoSection">
+      <div class="gridImageContainer">
+        <img src="https://img.freepik.com/foto-gratis/cerrar-jugadores-futbol_23-2148930222.jpg?w=1380&t=st=1687129708~exp=1687130308~hmac=7c075990ca3f4ebeec64442a4b26d7df9d9d73335f92e7316c25239ddd137e5c"
+        alt="Team"class="gridImage">
+        <div>
+          <h2>Madison Curling Club</h2>
+          <p class="paddingTop">Our multipurpose, six sheet facility was constructed at William McFarland Park in
+            McFarland, WI. The club's relationship with the Village of McFarland has been a
+            positive experience. Together the Madison Curling Club and the Village of McFarland
+            will make it possible for generations to enjoy the game and foster the spirit of the
+            "grand old game” of curling.</p>
+          <p class="paddingTop">As we mark our 12th anniversary in our current facility, it is hoped that new club
+            members will gain an appreciation for the vision and financial support of the past
+            members. In turn their support of the Madison Curling Club will enable others to enjoy
+            the experience of curling into the next millennium.</p>
+        </div>
+      </div>
+    </section>
+    <section class="padding" id="gallerySection">
+      <h2 class="paddingTop">Fun at the Club</h2>
+      <div class="paddingTop gridImageContainer">
+        <img src="https://img.freepik.com/foto-gratis/equipo-femenino-juntando-manos_23-2148355356.jpg?w=900&t=st=1687183480~exp=1687184080~hmac=1c46d477c0cb35e21349fc49d899e35c38e0ec2e9b9b93d08984b908bdbf479f"
+        alt="Team" class="gridImage">
+        <img src="https://img.freepik.com/foto-gratis/mujeres-rubias-reunidas-circulo_23-2148355354.jpg?w=900&t=st=1687183499~exp=1687184099~hmac=a000982c4ebf74915f7d6a9ae0ee2b5643eb51cce8beb4fc994008b21f571b8d"
+        alt="Team" class="gridImage">
+        <img src="https://img.freepik.com/foto-gratis/entrenador-futbol-ensenando-sus-alumnos_23-2149708038.jpg?w=900&t=st=1687183519~exp=1687184119~hmac=65cc28c68aa57007101c8362fc701ca0914f3b1d9ed8bd1b992998acae3566a9"
+        alt="Team" class="gridImage">
+        <img src="https://img.freepik.com/foto-gratis/vista-inferior-equipo-femenino-corredoras_23-2149044658.jpg?w=900&t=st=1687183699~exp=1687184299~hmac=d6a6b6348a1ffc8bf50efc910c32face9d1174a7d629ee82030e1a45425854bc"
+        alt="Team" class="gridImage">
+        <img src="https://img.freepik.com/foto-gratis/vista-inferior-mujeres-juntando-manos_23-2148355358.jpg?w=900&t=st=1687183731~exp=1687184331~hmac=44d95e00a64ff266ad399ea307cd873f452ae462d335522e596d3f87505a005e"
+        alt="Team" class="gridImage">
+        <img src="https://img.freepik.com/foto-gratis/entrenador-futbol-ensenando-sus-alumnos_23-2149708000.jpg?w=900&t=st=1687183575~exp=1687184175~hmac=059d0a5c860ce312d5cf03467f9a029a6fe19b1475fb5dec1c3fac13fc68123f"
+        alt="Team" class="gridImage">
+      </div>
+    </section>
+    <section class="padding centerText fullHeight" id="registerSection">
+      <h1>Are You Ready to try the Madison Curling Club?</h1>
+      <button class="button">REGISTER NOW</button>
+    </section>
+    <footer class="flex paddingX">
+      <div class="flex">
+        <span class="flexItem"><a href="https://www.facebook.com"><i class="icon fab fa-facebook"></i></a></span>
+        <span class="flexItem"><a href="https://www.twitter.com"><i class="icon fab fa-twitter"></i></a></span>
+        <span class="flexItem"><a href="https://www.instagram.com"><i class="icon fab fa-instagram"></i></a></span>
+      </div>
+      <div class="flexItem50 justifyRightText">© 2022 Madison Curling Club | infor@madisoncurlingclub.com</div>
     </footer>
     <script src="scripts.js"></script>
   </body>

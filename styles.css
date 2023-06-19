@@ -5,40 +5,47 @@
 }
 body {
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
-nav {
+nav, footer{
   background: #222;
   padding: 0 15px;
+  color: white;
 }
 a {
   color: white;
   text-decoration: none;
 }
 h1 {
-  font-size: 70px;
+  font-size: 50px;
   padding: 5vh 0;
 }
 h2 {
-  font-size: 50px;
+  font-size: 30px;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .padding {
-  padding: 10vh;
-}
-.paddingY {
-  padding: 0 10vh;
+  padding: 4%;
 }
 .paddingX {
-  padding: 0 10vh;
+  padding: 0 4%;
 }
 .paddingTop{
-  padding-top: 5vh;
+  padding-top: 2%;
 }
 .centerText {
   text-align: center;
 }
 .justifyText {
   text-align: justify;
+}
+.justifyRightText {
+  text-align: right; 
 }
 .menu,
 .submenu {
@@ -52,10 +59,6 @@ h2 {
 .item {
   padding: 10px;
 }
-.item.button {
-  padding: 9px 5px;
-}
-.item:not(.button) a:hover,
 .item a:hover::after {
   color: #ccc;
 }
@@ -76,9 +79,6 @@ h2 {
 .toggle {
   order: 1;
   font-size: 20px;
-}
-.item.button {
-  order: 2;
 }
 .item {
   order: 3;
@@ -124,27 +124,10 @@ h2 {
   .logo {
     flex: 1;
   }
-  .item.button {
-    width: auto;
-    order: 1;
-    display: block;
-  }
   .toggle {
     flex: 1;
     text-align: right;
     order: 2;
-  }
-  /* Button up from tablet screen */
-  .menu li.button a {
-    padding: 10px 15px;
-    margin: 5px 0;
-  }
-  .button a {
-    background: #0080ff;
-    border: 1px royalblue solid;
-  }
-  .button a:hover {
-    text-decoration: none;
   }
 }
 /* Desktop menu */
@@ -163,9 +146,6 @@ h2 {
     display: block;
     width: auto;
   }
-  .button {
-    order: 2;
-  }
   .submenu-active .submenu {
     display: block;
     position: absolute;
@@ -179,42 +159,98 @@ h2 {
   .submenu-active {
     border-radius: 0;
   }
+  h1 {
+    font-size: 80px;
+    padding: 5vh 0;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .flex {
+    justify-content: space-between!important;
+  }
+  section {
+    min-height: 100vh;
+  }
+  #servicesSection > .flex {
+    display: flex!important;
+  }
 }
 .hero {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(103, 101, 101, 0.5)), 
                     url("https://img.freepik.com/foto-gratis/jugadores-voleibol-teniendo-partido_23-2149492354.jpg?w=900&t=st=1687109579~exp=1687110179~hmac=c3a6e3760b1f8cd93c904e9efbad8675c87c8773af9a72d11eddd323793a1d45");
   background-position: bottom;
-  align-self: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  justify-content: center;
-  height: 90vh;
+  height: 95vh;
+  align-items: flex-start;
 }
-
 .brandLogo {
-  width: 100px;
+  width: 200px;
 }
-
-.cardGroup {
+.flex {
   display: flex;
-  border: 1px solid #CAD0D2;
-  border-radius: 4px;
-  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
 }
-
-  .cardGroup {
-    flex: 1 1 0%;
-    border: none;
-    border-radius: 0;
-  }
-
-  .cardGroup + .cardGroup {
-    padding-left: 5px;
-  }
-
-  .cardDescription {
-    flex: 1 1 auto;
-  }
+#servicesSection > .flex {
+  display: block;
+}
+.flexItem {
+  flex-basis: 20%; 
+}
+.flexItem30 {
+  flex-basis: 30%; 
+}
+.flexItem50 {
+  flex-basis: 50%; 
+}
+.gridText {
+  font-size: 70px;
+}
+.icon {
+    font-size: xxx-large;
+    padding: 2vh;
+    color: #f44336;
+}
+.fullHeight {
+  height: 85vh;
+}
+.gridImage {
+  width: 100%;
+  height: auto;
+}
+.gridImage:hover {
+  background-color: rgba(103, 101, 101, 0.5);
+  opacity: 0.5;
+}
+.gridImageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vmax, 1fr));
+  gap: 32px;
+  width: -webkit-fill-available;
+  align-items: center;
+}
+.button {
+  background-color: #f44336; 
+  color: white; 
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: large;
+}
+.button:hover {
+  background-color: #b42d24;
+  color: white;
+}
+#registerSection, #infoSection {
+  background-color: gray;
+}
