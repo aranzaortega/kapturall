@@ -183,7 +183,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 95vh;
+  min-height: 90vh!important;
   align-items: flex-start;
 }
 .brandLogo {
